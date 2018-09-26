@@ -19,8 +19,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/flike/kingshard/core/errors"
-	"github.com/flike/kingshard/mysql"
+	"github.com/spjich/kingshard/core/errors"
+	"github.com/spjich/kingshard/mysql"
 )
 
 const (

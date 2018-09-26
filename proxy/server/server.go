@@ -26,13 +26,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/flike/kingshard/mysql"
+	"github.com/spjich/kingshard/mysql"
 
-	"github.com/flike/kingshard/backend"
-	"github.com/flike/kingshard/config"
-	"github.com/flike/kingshard/core/errors"
-	"github.com/flike/kingshard/core/golog"
-	"github.com/flike/kingshard/proxy/router"
+	"github.com/spjich/kingshard/backend"
+	"github.com/spjich/kingshard/config"
+	"github.com/spjich/kingshard/core/errors"
+	"github.com/spjich/kingshard/core/golog"
+	"github.com/spjich/kingshard/proxy/router"
 	"sync"
 )
 

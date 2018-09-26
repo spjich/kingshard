@@ -22,9 +22,9 @@ import (
 	"strings"
 	"time"
 
-	ksError "github.com/flike/kingshard/core/errors"
-	"github.com/flike/kingshard/core/golog"
 	"github.com/labstack/echo"
+	ksError "github.com/spjich/kingshard/core/errors"
+	"github.com/spjich/kingshard/core/golog"
 )
 
 func (s *ApiServer) GetAllowIps(c echo.Context) error {
@@ -238,7 +238,7 @@ type ShardConfig struct {
 
 func (s *ApiServer) GetProxySchema(c echo.Context) error {
 	shardConfig := make([]ShardConfig, 0, 10)
-	for _, schema := range s.cfg.SchemaList{
+	for _, schema := range s.cfg.SchemaList {
 		//append default rule
 		shardConfig = append(shardConfig,
 			ShardConfig{
@@ -249,7 +249,7 @@ func (s *ApiServer) GetProxySchema(c echo.Context) error {
 		for _, r := range schema.ShardRule {
 			shardConfig = append(shardConfig,
 				ShardConfig{
-					User:		   schema.User,
+					User:          schema.User,
 					DB:            r.DB,
 					Table:         r.Table,
 					Key:           r.Key,
